@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var darkBtn=document.getElementById("dark"),lightBtn=document.getElementById("light"),setColorMode=function(){"dark"===localStorage.getItem("colorMode")?(setDarkMode(),darkBtn.click()):(setLightMode(),lightBtn.click())},setDarkMode=function(){document.querySelector("body").classList="dark"},setLightMode=function(){document.querySelector("body").classList="light"};setColorMode();for(var radioButtons=document.querySelectorAll(".toggle__wrapper input"),i=0;i<radioButtons.length;i++)radioButtons[i].addEventListener("click",(function(t){darkBtn.checked?(localStorage.setItem("colorMode","dark"),setDarkMode()):(localStorage.setItem("colorMode","light"),setLightMode())}));
 //# sourceMappingURL=script.js.map
